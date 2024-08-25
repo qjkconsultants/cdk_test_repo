@@ -35,6 +35,10 @@ jobs:
       working-directory: ./py-webdepl
       run: cdk synth
 
+    - name: cdk bootstrap
+      working-directory: ./py-webdepl
+      run: cdk bootstrap
+
     - name: cdk deploy
       working-directory: ./py-webdepl
       env: 
